@@ -1,0 +1,17 @@
+/* Transición base para la imagen para que el efecto sea suave */
+.banner .logo-proyectos {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+    /* Opcional: mejora la estética del brillo en las esquinas */
+}
+
+/* Efecto cuando el mouse pasa sobre TODO el article (.banner) */
+.banner:hover .logo-proyectos {
+    /* Efecto de alejamiento */
+    transform: scale(0.95);
+
+    /* Efecto de luz suave en los bordes (glow) */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(238, 106, 85, 0.3);
+}

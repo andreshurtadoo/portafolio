@@ -1,0 +1,184 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    /* Equivalente a gap-x-4 */
+}
+
+.footer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #d1d5db;
+    /* border-gray-300 */
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    background-color: #f3f4f6;
+    /* bg-gray-100 */
+    color: #1f2937;
+    /* text-gray-800 */
+    max-width: max-content;
+    text-decoration: none;
+}
+
+.footer-btn:hover {
+    background-color: #1f2937;
+    /* bg-gray-800 */
+    border-color: #111827;
+    /* border-gray-900 */
+    color: #ffffff;
+    /* text-white */
+}
+
+.footer-btn:active {
+    background-color: #000000;
+    /* active:bg-black */
+}
+
+.footer-btn:focus,
+.footer-btn:focus-visible {
+    outline: none;
+}
+
+/* Tamaños para los iconos */
+.footer-icon.size-5 {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.footer-icon.size-4 {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Modo Oscuro */
+@media (prefers-color-scheme: dark) {
+    .footer-btn {
+        background-color: #1f2937;
+        /* dark:bg-gray-800 */
+        color: #ffffff;
+        /* dark:text-white */
+        border-color: #4b5563;
+        /* dark:border-gray-600 */
+    }
+}
+
+
+.icon-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #ffffff;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Control para limitar el tamaño de los SVG internos */
+.icon-badge svg {
+    width: 1.875rem;
+    height: 1.875rem;
+    flex-shrink: 0;
+}
+
+.dark {
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+
+/* Contenedor Nav */
+.social-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* equivalente a gap-4 */
+    margin-top: 2rem;
+    /* equivalente a mt-8 */
+}
+
+/* Botones de enlaces sociales */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* gap-2 */
+    padding: 0.25rem 1rem;
+    /* py-1 px-4 */
+    font-size: 1rem;
+    /* text-md */
+    line-height: 1.5rem;
+    max-width: max-content;
+    border-radius: 9999px;
+    /* rounded-full */
+    border: 1px solid #d1d5db;
+    /* border border-gray-300 */
+    background-color: #f3f4f6;
+    /* bg-gray-100 */
+    color: #1f2937;
+    /* text-gray-800 */
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    /* transition */
+}
+
+/* Tamaños de los iconos SVG internos */
+.social-icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+/* Estados de interacción (Hover y Active) */
+.social-btn:hover {
+    background-color: #111827;
+    /* hover:bg-gray-900 */
+    border-color: #374151;
+    /* hover:border-gray-700 */
+    color: #ffffff;
+    /* hover:text-white */
+}
+
+.social-btn:active {
+    background-color: #000000;
+    /* active:bg-black */
+}
+
+/* Accesibilidad y Foco */
+.social-btn:focus,
+.social-btn:focus-visible {
+    outline: none;
+}
+
+.social-btn:focus-visible {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(234, 179, 8, 0.8);
+    /* Equivalente a ring-white ring-offset-2 ring-yellow-500/80 */
+}
+
+/* Modo Oscuro (Prefers Color Scheme) */
+@media (prefers-color-scheme: dark) {
+    .social-btn {
+        background-color: #1f2937;
+        /* dark:bg-gray-800 */
+        border-color: #4b5563;
+        /* dark:border-gray-600 */
+        color: #ffffff;
+        /* dark:text-white */
+    }
+
+    .social-btn:hover {
+        background-color: #f3f4f6;
+        /* dark:hover:bg-gray-100 */
+        border-color: #d1d5db;
+        /* dark:hover:border-gray-300 */
+        color: #000000;
+        /* dark:hover:text-black */
+    }
+}
